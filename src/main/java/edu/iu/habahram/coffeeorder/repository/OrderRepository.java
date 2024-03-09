@@ -1,6 +1,7 @@
 // OrderRepository.java
 package edu.iu.habahram.coffeeorder.repository;
 
+import org.springframework.stereotype.Component;
 import edu.iu.habahram.coffeeorder.model.OrderData;
 import edu.iu.habahram.coffeeorder.model.Receipt;
 
@@ -11,6 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
+@Component
 public class OrderRepository {
     private final AtomicInteger idCounter = new AtomicInteger(0);
 
